@@ -1,0 +1,59 @@
+#{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #4169E1;
+}
+
+section h1{
+	text-align: center;
+	background-color: white;
+	width: 700px;
+	padding: 5px;
+}
+
+section {
+	width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+form{
+	position: relative;
+	background-color: #fff;
+	padding: 30px;
+}
+
+form label {
+	font-weight: bold;
+}
+
+.tipos {
+	max-width: 100%;
+	width: 99%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border-radius: slid #b50909 1px;
+	padding-left: 1%;
+}
+
+form textarea {
+	max-width: 100%;
+	width: 99%;
+	border: solid #0d214f 1px;
+	padding-left: 1%;
+	min-height: 100px;
+}
+
+.botao{
+	height: auto;
+	cursor: pointer;
+	background-color: #0d214f;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 5px;
+}
+

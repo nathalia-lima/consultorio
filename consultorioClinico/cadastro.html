@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+	    <title>Consultório clínico</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="estilo.css">
+	<head>
+	          
+	<body>
+		
+
+		<section id="texto-contato">
+
+			<h1>Consultório clínico</h1>
+
+			<form action="gravarDados.php" method="post" enctype="multipart/form-data">
+				<p class="nome">
+					<label for="nome">Nome:</label>
+					<input class="tipos" type="text" id="nomeid" placeholder="Exemplo: Fulano da Silva" required name="nome" maxlength="60">
+				</p>
+
+				<p class="fone">
+					<label>Telefone:</label>
+					<input class="tipos" type="phone" id="foneid" placeholder="xxxxxxxxxx" name="telefone" required maxlength="11">
+				</p>
+
+				<p>
+					<label>Email:</label>
+					<input class="tipos" type="email" id="emailid" placeholder="fulano@mail.com" name="email" required maxlength="80">
+				</p>
+
+				<p>
+					<label>Data de nascimento:</label>
+					<input class="tipos" type="date" name="dataNasc" placeholder="2022-08-07">
+				</p>
+
+				<p>
+					<label>Sexo:</label>
+					<span>
+						<input type="radio" name="sexo" value="M" checked><label>Masculino</label>
+					</span>
+					
+					<span>
+						<input type="radio" name="sexo" value="F"><label>Feminino</label>
+					</span>	
+				</p>
+
+				<p>
+					<label>Estado civil:</label><br>
+					<select name="estadoCivil">
+						<option value="">Escolha</option>
+						<option value="C">Solteiro</option>
+						<option value="G">Casado</option>
+						<option value="E">Viúvo</option>
+						<option value="P">Separado</option>
+					</select>
+				</p>
+
+				<p>
+					<label>Foto do RG:</label>
+					<input class="tipos" type="file" name="rg">
+				</p>
+
+				<p>
+					<label>Foto da carteirinha:</label>
+					<input class="tipos" type="file" name="carteirinha">
+				</p>
+
+				<p>
+					<label>Número da carteirinha:</label>
+					<input class="tipos" type="number" name="numCarteirinha" maxlength="10">
+				</p>
+
+				<p>
+					<label>Data da consulta:</label>
+					<input class="tipos" type="date" name="dataConsulta">
+				</p>
+
+				<p>
+					<label>Horário da consulta:</label>
+					<input class="tipos" type="time" name="hora">
+				</p>
+
+				<p>
+					<label>Possui alguma doença crônica?</label><br>
+					<span>
+						<input type="checkbox" value="1" name="doenca"><label>Diabetes</label><br>
+						<input type="checkbox" value="2" name="doenca"><label>Problemas cardiovasculares</label><br>
+						<input type="checkbox" value="3" name="doenca"><label>Problemas respiratórios</label><br>
+						<input type="checkbox" value="4" name="doenca"><label>Outros</label><br>
+						<input type="checkbox" value="5" name="doenca" checked><label>Não possui nenhuma</label><br>
+					</span>
+
+				</p>
+
+				<p>
+					<label>Descrição da situação médica atual:</label>
+					<textarea placeholder="Mensagem" name="mensagem"></textarea>
+				</p>
+
+
+				<input type="submit" value="Enviar dados" class="botao">
+        		<input type="reset" value="Limpar dados" class="botao">
+
+			</form>
+		</section>
+
+
+</html>    

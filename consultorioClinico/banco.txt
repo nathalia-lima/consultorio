@@ -1,0 +1,17 @@
+CREATE DATABASE ALUNO1732091001;
+USE ALUNO1732091001;
+CREATE TABLE CADASTRO (
+	nome VARCHAR(60) NOT NULL,
+	telefone FLOAT(11),
+	email VARCHAR(80),
+	dataNasc DATE,
+	sexo CHAR(2),
+	estadoCivil CHAR(1),
+	rg VARCHAR(30),
+	carteirinha VARCHAR(30),
+	numCarteirinha FLOAT(10),
+	dataConsulta DATE,
+	hora CHAR(5),
+	doenca CHAR(1),
+	mensagem TEXT
+);
